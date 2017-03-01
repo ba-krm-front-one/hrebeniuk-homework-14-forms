@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Form</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/payment-form.css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<main class="form-container">
+		<section class="form-title">
+			<div>
+				<h2 class="form-title__name">Harold Finch</h2>
+				<p class="form-title__explanations">Your Total</p>
+			</div>
+			<div>
+				<h1 class="form-title__bill">88</h1>
+			</div>
+		</section>
+		<form action="">
+			<fieldset class="form-payment">
+				<label class="form-payment__info">
+					Credit card number
+					<input class="form-payment__input" type="number" name="credit-card" >
+				</label>
+				<label class="form-payment__info">
+					<p>Expiration date</p>
+					<div class="form-payment__flex">
+						<select class="form-payment__input"  id="month">
+							<option value='Month' selected>Month</option>
+							<option value='01'>January</option>
+							<option value='02'>February</option>
+							<option value='03'>March</option>
+							<option value='04'>April</option>
+							<option value='05'>May</option>
+							<option value='06'>June</option>
+							<option value='07'>July</option>
+							<option value='08'>August</option>
+							<option value='09'>September</option>
+							<option value='10'>October</option>
+							<option value='11'>November</option>
+							<option value='12'>December</option>
+						</select>
+						<select class="form-payment__input" id="year">
+							<option value='Year' selected >Year</option>
+							<option value='17'>2017</option>
+							<option value='18'>2018</option>
+							<option value='19'>2019</option>
+						</select>
+					</div>
+				</label>
+				<label class="form-payment__info">
+					<p>CVV</p>
+					<div class="form-payment__flex">
+						<input class="form-payment__input" type="number" id="CVV">
+						<p class="flex-text">3 or 4 digits - <a href="#" class="form-link">view example</a></p>
+					</div>
+				</label>
+				<section class="button-container">
+					<button class="form-container__button">Pay</button>
+				</section>
+			</fieldset>
+		</form>
+		<footer class="footer-navigation">
+			<a href="#" class="form-link">Cancel order</a>
+		</footer>
+	</main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: url("../assets/payment-background.png") #75797a;
+	background-size: cover;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	color:  #727f82;
+	font-weight: 400;
+	text-align: left;
+	line-height: 14px;
+}
+
+
+.form-container{
+	background-color:  #ffffff;
+	max-width: 336px;
+	min-width: 250px;
+	min-height: 532px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+.form-title{
+	background-color:  #f8edaf;
+	padding: 24px;
+	color: #637570;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.form-title__name{
+	font-size: 14px;
+	font-weight: 700;
+	opacity: 0.9;
+}
+.form-title__bill{
+	font-size: 36px;
+	text-align: right;
+	font-weight: 400;
+	margin: 0;
+}
+.form-title__bill:before{
+	content: "$";
+}
+.form-title__explanations{
+	font-size: 10px;
+	text-transform: uppercase;
+	opacity: 0.7;
+	line-height: 17px;
+	letter-spacing: 1px;
+}
+.form-payment{
+	border: transparent;
+	margin:30px 24px;
+
+}
+.form-payment__info{
+	color:  #9eabad;
+}
+.form-payment__input{
+	height: 44px;
+	border: 2px solid #bac8cb;
+	margin-top: 9px;
+	margin-bottom: 17px;
+	padding-left: 10px;
+}
+.form-payment__input[name="credit-card"]{
+	width: 100%;
+}
+.form-payment__flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 1;
+}
+#month{
+	flex-grow: 2;
+	max-width: 176px;
+	margin-right: 16px;
+}
+#year{
+	flex-grow: 1;
+	max-width: none;
+}
+#CVV{
+	max-width: 96px;
+	min-width: 70px;
+	margin-right: 3px;
+}
+.flex-text{
+	width: calc(100% - 110px);
+	font-size: 12px;
+}
+.form-link{
+	text-decoration: none;
+	color:  #9eabad;
+	font-weight: 400;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #9eabad;
+}
+.form-link:hover{
+	color: #25b86a;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #25b86a;
+}
+.button-container{
+	margin-top: 15px;
+	padding-top: 31px;
+	border-top: 1px solid #edf0f1;;
+}
+.form-container__button{
+	background-color: #25b86a;
+	color: #fff;
+	height: 42px;
+	font-size: 18px;
+	border: transparent;
+	width: 100%;
+}
+.form-container__button:hover{
+	border: 2px solid #25b86a;
+	color: #25b86a;
+	background-color: transparent;
+}
+.footer-navigation{
+	text-align: center;
+	margin-bottom: 10px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+
+}
